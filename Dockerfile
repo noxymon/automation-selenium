@@ -102,7 +102,7 @@ RUN echo "chrome" > /opt/selenium/browser_name
 RUN chromium --version | awk '{print $2}' > /opt/selenium/browser_version
 RUN echo "\"goog:chromeOptions\": {\"binary\": \"/usr/bin/chromium\"}" > /opt/selenium/browser_binary_location
 
-USER 1200
+USER root
 
 #====================================
 # Scripts to run Selenium Standalone
